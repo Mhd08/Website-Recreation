@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: grey;
+        }
+
+        .header {
+
+            width: 100%;
+            padding: .5% 2%;
+            background-color: black;
+            display: flex;
+            justify-content: space-between;
+            z-index: 100;
+            align-items: center;
+        }
+
+
+        .logo {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 6rem;
+            font-weight: 600;
+            text-decoration: none;
+            color: aliceblue;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-evenly;
+            width: 20%;
+        }
+
+        .navbar a {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 2rem;
+            font-weight: 600;
+            text-decoration: none;
+            color: aliceblue;
+            transition: .3s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+        }
+
+        .navbar a:hover {
+            background-color: grey;
+            border-radius: 20px;
+        }
+
+        .content {
+            width: 100%;
+            height: 100rem;
+            align-items: center;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+        }
+
+        h1 {
+            font-size: 200px;
+            text-align: center;
+            position: relative;
+            top: 20%;
+        }
+
+
+        .buttons {
+            width: 100%;
+            height: 20rem;
+            display: flex;
+            justify-content:space-between;
+            margin: 0;
+            padding: .5% 35%;
+        }
+
+        .buttons a {
+            font-size: 6rem;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .learn-more {
+            outline: .5rem solid white;
+            border-radius: 1rem;
+            width: 30%;
+            text-align: center;
+            align-items: center;
+            align-self: center;
+            margin: auto;
+            color: white;
+            transition: .3s cubic-bezier(0.075, 0.82, 0.165, 1);
+        }
+
+        .learn-more:hover {
+            background-color: white;
+            color: grey;
+            transform: scale(1.2);
+        }
+
+        .no-press {
+            background-color: white;
+            border-radius: 1rem;
+            width: 30%;
+            text-align: center;
+            align-items: center;
+            align-self: center;
+            margin: auto;
+            color: grey;
+            transition: .3s cubic-bezier(0.075, 0.82, 0.165, 1);
+        }
+
+        .no-press:hover {
+            background-color: darkred;
+            transform: scale(1.3);
+            
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+    
+    <header class="header">
+        <a href="#" class="logo">CodeBrave</a>
+
+        <nav class="navbar">
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Services</a>
+            <a href="">Contact</a>
+            <a href="">Feedback</a>
+        </nav>
+
+    </header>
+    
+    <div class="content">
+
+        <h1>Create Amazing Websites <br>
+            Pure HTML and CSS</h1>
+
+    </div>
+
+    <div class="buttons">
+
+        <a href="" class="learn-more">Learn More</a>
+        <a href="" class="no-press">Do Not Press</a>
+
+    </div>
+
+</body>
+
+</html>
